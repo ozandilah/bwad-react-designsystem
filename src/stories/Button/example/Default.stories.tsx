@@ -2,7 +2,7 @@
 import React from "react";
 import { ComponentMeta } from "@storybook/react";
 import Button from "../../../components/Button";
-import { ReactComponent as GoogleLogo } from "../../../assets/images/google-logo.svg";
+import { ReactComponent as Group } from "../../../assets/images/Group.svg";
 export default {
   /* 👇 The title prop is optional.
    * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
@@ -31,7 +31,7 @@ Secondary.args = {
 export const Alternative = (args: any) => (
   <Button {...args}>
     <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-      <GoogleLogo />
+      <Group />
       <span className="ml-2">Sign In with Google</span>
     </a>
   </Button>
@@ -39,4 +39,5 @@ export const Alternative = (args: any) => (
 
 Alternative.args = {
   state: "alternative",
+  className: "border-2 border-[#E7E5F4]",
 };

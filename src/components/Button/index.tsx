@@ -73,13 +73,10 @@ function Button(props: Props) {
       </>
     ),
   });
-  return cloneElement(
-    children,
-    {
-      className: className.join(" "),
-    },
-    state
-  );
+  return cloneElement(children, {
+    className: className.join(" "),
+    state,
+  });
 }
 
 export default Button;
